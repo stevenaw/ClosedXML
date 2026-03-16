@@ -59,7 +59,7 @@ namespace ClosedXML.Tests.Excel.InsertData
         }
 
         [TestCaseSource(nameof(ArraySources))]
-        public void CanCreateArrayReader<T>(IEnumerable<T> data)
+        public void CanCreateArrayReader(IEnumerable<object> data)
         {
             var reader = InsertDataReaderFactory.Instance.CreateReader(data);
 
