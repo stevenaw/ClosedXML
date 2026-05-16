@@ -9,7 +9,7 @@ namespace ClosedXML.Extensions
     {
         internal static String WrapInBraces(this Guid guid)
         {
-            return string.Concat('{', guid.ToString(), '}');
+            return guid.ToString("B");
         }
     }
 }
